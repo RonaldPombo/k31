@@ -137,7 +137,6 @@ function Responsividade(screenSize) {
             cssFormsInput[i].style.borderRadius = '0.4em';
             cssFormsInput[i].style.fontSize = '0.6em';
         }
-        console.log('one ')
     } else{
         cssFormsBox.style.height = 'fit-content';
         cssFormsBox.style.width = 'fit-content';
@@ -163,9 +162,7 @@ function Responsividade(screenSize) {
             cssFormsInput[i].style.borderRadius = '0.4em';
             cssFormsInput[i].style.fontSize = '0.9em';
         }
-        console.log('two ')
     }
-    return headerPaddingRight;
 }
 
 window.addEventListener('resize' ,Responsividade)
