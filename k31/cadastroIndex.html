@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="cadastroScript.js"></script>
+    <link rel="stylesheet" href="cadastroStyle.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <ul class="navbar">
+        <li><a class="navbarActive" href="">Cadastro</a></li>
+        <li><a class="navbarInactive" href="">Listar</a></li>
+        <li><a class="navbarInactive" href="../k31php/tabela.php">Tabela</a></li>
+        <li><a class="navbarInactive" href="../k31php/date.php">Data</a></li>
+        <li><a class="navbarInactive" href="../k31php/array.php">Array</a></li>
+        <li><a class="navbarInactive" href="../k31php/getCadastro.php">GetCadastro</a></li>
+        <li><a class="navbarInactive" href="../k31/loginIndex.html">Sair</a></li>
+    </ul>
+    <div class="container">
+        <div class="forms-box">
+            <form class="forms" name="form-cadastro" method="post" action="getCadastro.php">
+                <h1 class="forms-login forms-header">Cadastro</h1>
+                <label for="CPF" class="forms-content forms-label">Usuário/CPF</label>
+                <input type="text" class="forms-content forms-input" name="cadastro-login"> 
+                <label for="cidade" class="forms-content forms-label">Cidade</label>
+                <input type="text" name="cadastro-cidade"class="forms-content forms-input">
+                <label for="endereco" class="forms-content forms-label">Endereço</label>
+                <input type="text" class="forms-content forms-input" name="cadastro-endereco">
+                <label for="email" class="forms-content forms-label">Email</label>
+                <input type="text" class="forms-content forms-input" name="cadastro-email">
+                <input type="submit" name="form-submit" value="Cadastrar" id="form-submit" class="forms-content forms-submit" href='#'>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
